@@ -32,6 +32,9 @@ data "aws_iam_policy_document" "self_manage_iam_user" {
       "iam:*LoginProfile",
       "iam:*AccessKey*",
       "iam:*SSHPublicKey*",
+      "iam:ListUserTags",
+      "iam:UntagUser",
+      "iam:TagUser",
     ]
 
     resources = [
